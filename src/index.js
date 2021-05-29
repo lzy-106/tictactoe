@@ -46,11 +46,18 @@ class Game extends React.Component {
                 <div className="game-board">
                     <Board />
                 </div>
-            </div> 
-            <div className="game-info"> 
-                <div>{/* TODO */}</div>
-                <ol>{/* TODO */}</ol>
+                <div className="game-info">
+                    <div>{/* status */}</div>
+                    <ol>{/* TODO */}</ol>
+                </div>
             </div>
-        )
+        );
     }
 }
+
+// ==========================================
+
+ReactDOM.render(
+    <Game />,
+    document.getElementById('root')
+);
